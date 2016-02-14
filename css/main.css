@@ -1,0 +1,55 @@
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	
+}
+
+body {
+    background-color: white;
+    /*background: url(images/bg-blur.jpg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+h1 {
+	font-size: 48px;
+	color: black;
+	font-weight: 300;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	padding-left: 4px;
+
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: 200px;
+	vertical-align: text-bottom;
+    
+}
+
+
+.row {
+	margin: 2px;
+}
+
+.container {
+	background-color: transparent;
+
+}
