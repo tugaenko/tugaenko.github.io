@@ -29,23 +29,51 @@ h2 {
 	margin-top: 0;
 }
 
+h3 {
+	margin-bottom: 20px;
+
+}
 h4 {
 	font-size: 16px;
 	font-weight: 700;
 	color: black;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
+p {
+	font-size: 16px;
 
-.container {
+	/*font-weight: 700; */
+	margin-bottom: 10px;
+	color: black;
+	}
+.row {
+	margin-bottom: 20px
+}
+
+.photo {
+	margin-bottom: 1px
+}
+
+.row-blanc {
+	height: 45px;
+}
+.container-index {
 	background-color: transparent;
 	position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     height: 70%;
     width: 50%;
     margin: -15% 0 0 -25%;
+}
 
+.container {
+	background-color: transparent;
+	position: absolute;
+    left: 25%;
+    width: 50%;
+   
 }
 
 .footer {
