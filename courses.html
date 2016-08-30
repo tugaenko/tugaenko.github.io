@@ -14,10 +14,17 @@
 
 		  ga('create', 'UA-82638806-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
-    </head>
+		<script>
+			var trackOutboundLink = function(url) {
+			   ga('send', 'event', 'outbound', 'click', url, {
+			     'transport': 'beacon',
+			     'hitCallback': function(){document.location = url;}
+			   });
+			}
+		</script>
 
+    </head>
     <body>
 		<div class="container" >
 			<div class="row">
@@ -28,7 +35,7 @@
 
 				<div class="col-md-12" >
 					<h4>HTML and CSS</h4>
-					<p> <a href = https://www.udacity.com/course/intro-to-html-and-css--ud304>Intro to HTML and CSS </a> <i> 
+					<p> <a href = "https://www.udacity.com/course/intro-to-html-and-css--ud304" onclick="trackOutboundLink('https://www.udacity.com/course/intro-to-html-and-css--ud304'); return false;">Intro to HTML and CSS </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Udacity	</i> </p>
 					<p> Learn how to convert digital design mockups into static web pages and how to build a responsive portfolio site to showcase your work. </p>
 				</div>
@@ -36,7 +43,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.codecademy.com/learn/web>HTML and CSS </a> <i> 
+					<p> <a href = "https://www.codecademy.com/learn/web" onclick="trackOutboundLink('https://www.codecademy.com/learn/web'); return false;">HTML and CSS </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Codecademy	</i> </p>
 					<p> Learn how to create websites by structuring and styling your pages with HTML and CSS. </p>
 				</div>
@@ -45,7 +52,7 @@
 			<div class="row">
 				<div class="col-md-12" >
 					<h4>Python and Computer Science</h4>
-					<p> <a href = https://developers.google.com/edu/python/>Google's Python Class	</a> <i> 
+					<p> <a href = "https://developers.google.com/edu/python"  onclick="trackOutboundLink('https://developers.google.com/edu/python'); return false;" > Google's Python Class	</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Google	</i> </p>
 					<p> This is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding. These materials are used within Google to introduce Python to people who have just a little programming experience. </p>
 				</div>
@@ -53,7 +60,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/course/pythonlearn> Programming for Everybody (Python) </a> <i> 
+					<p> <a href = "https://www.coursera.org/course/pythonlearn" onclick="trackOutboundLink('https://www.coursera.org/course/pythonlearn'); return false;"> Programming for Everybody (Python) </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> This course aims to teach everyone the basics of programming computers using Python. We cover the basics of how one constructs a program from a series of simple instructions in Python.  </p>
 				</div>
@@ -61,7 +68,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/learn/python-data> Python Data Structures </a> <i> 
+					<p> <a href = "https://www.coursera.org/learn/python-data" onclick="trackOutboundLink('https://www.coursera.org/learn/python-data'); return false;"> Python Data Structures </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> This course will introduce the core data structures of the Python programming language. We will move past the basics of procedural programming and explore how we can use the Python built-in data structures such as lists, dictionaries, and tuples to perform increasingly complex data analysis.   </p>
 				</div>
@@ -69,7 +76,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/learn/python-network-data>Using Python to Access Web Data</a> <i> 
+					<p> <a href = "https://www.coursera.org/learn/python-network-data" onclick="trackOutboundLink('https://www.coursera.org/learn/python-network-data'); return false;">Using Python to Access Web Data</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> This course will show how one can treat the Internet as a source of data. We will scrape, parse, and read web data as well as access data using web APIs. We will work with HTML, XML, and JSON data formats in Python.  </p>
 				</div>
@@ -77,7 +84,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/learn/python-databases> Using Databases with Python </a> <i> 
+					<p> <a href = "https://www.coursera.org/learn/python-databases" onclick="trackOutboundLink('https://www.coursera.org/learn/python-databases'); return false;"> Using Databases with Python </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> This course will introduce students to the basics of the Structured Query Language (SQL) as well as basic database design for storing data as part of a multi-step data gathering, analysis, and processing effort. The course will use SQLite3 as its database. We will also build web crawlers and multi-step data gathering and visualization processes. We will use the D3.js library to do basic data visualization.  </p>
 				</div>
@@ -85,7 +92,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.udacity.com/course/intro-to-computer-science--cs101 > Intro to Computer Science  (CS101) </a> <i> 
+					<p> <a href = "https://www.udacity.com/course/intro-to-computer-science--cs101" onclick="trackOutboundLink('https://www.udacity.com/course/intro-to-computer-science--cs101'); return false;"> Intro to Computer Science  (CS101) </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Udacity	</i> </p>
 					<p> Learn key computer science concepts in this introductory Python course. You'll learn by doing, and will build your own search engine and social network.  </p>
 				</div>
@@ -93,7 +100,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/course/interactivepython1>An Introduction to Interactive Programming in Python (Part 1)</a> <i> 
+					<p> <a href = "https://www.coursera.org/course/interactivepython1" onclick="trackOutboundLink('https://www.coursera.org/course/interactivepython1'); return false;">An Introduction to Interactive Programming in Python (Part 1)</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> We will introduce the basic elements of programming (such as expressions, conditionals, and functions) and then use these elements to create simple interactive applications such as a digital stopwatch. Part 1 of this class will culminate in building a version of the classic arcade game "Pong".   </p>
 				</div>
@@ -101,17 +108,17 @@
 
 			<div class="row">
 				<div class="col-md-12" >
-					<p> <a href = https://www.coursera.org/course/interactivepython2>An Introduction to Interactive Programming in Python (Part 2)</a> <i> 
+					<p> <a href = "https://www.coursera.org/course/interactivepython2" onclick="trackOutboundLink('https://www.coursera.org/course/interactivepython2'); return false;">An Introduction to Interactive Programming in Python (Part 2)</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> We will introduce more elements of programming (such as list, dictionaries, and loops) and then use these elements to create games such as Blackjack. Part 2 of this class will culminate in building a version of the classic arcade game "Asteroids". </p>
-					<p>Project: <a href = http://www.codeskulptor.org/#user40_c3E0fFQtuU_0.py>Asteroids.  </a> You can play it directly in your browser!</p>
+					<p>Project: <a href = "http://www.codeskulptor.org/#user40_c3E0fFQtuU_0.py" onclick="trackOutboundLink('http://www.codeskulptor.org/#user40_c3E0fFQtuU_0.py'); return false;">Asteroids.  </a> You can play it directly in your browser!</p>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-12" >
 					<h4>Java</h4>
-					<p> <a href = https://www.coursera.org/learn/object-oriented-java>Object Oriented Programming in Java</a> <i> 
+					<p> <a href = "https://www.coursera.org/learn/object-oriented-java" onclick="trackOutboundLink('https://www.coursera.org/learn/object-oriented-java'); return false;">Object Oriented Programming in Java</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> Welcome to our course on Object Oriented Programming in Java using data visualization. This is an intermediate Java course.  Visualizing Data, Objects, Memory Models, and Scope, Creating GUIs and Displaying Data, Inheritance, Responding to User Events, Searching and Sorting: From Code to Algorithms. </p>
 				</div>
@@ -120,7 +127,7 @@
 			<div class="row">
 				<div class="col-md-12" >
 					<h4>Linux and Command Line</h4>
-					<p> <a href = https://www.udacity.com/course/linux-command-line-basics--ud595>Linux Command Line Basics</a> <i> 
+					<p> <a href = "https://www.udacity.com/course/linux-command-line-basics--ud595" onclick="trackOutboundLink('https://www.udacity.com/course/linux-command-line-basics--ud595'); return false;">Linux Command Line Basics</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Udacity	</i> </p>
 					<p> An introduction to the Linux command line interface.  </p>
 				</div>
@@ -128,7 +135,7 @@
 
 			<div class="row">
 				<div class="col-md-12" >	
-					<p> <a href = https://www.udacity.com/course/configuring-linux-web-servers--ud299>Configuring Linux Web Servers </a> <i> 
+					<p> <a href = "https://www.udacity.com/course/configuring-linux-web-servers--ud299" onclick="trackOutboundLink('https://www.udacity.com/course/configuring-linux-web-servers--ud299'); return false;">Configuring Linux Web Servers </a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Udacity	</i> </p>
 					<p> Serve a data-driven web application as you become acquainted with, configure and finally secure a Ubuntu Linux web application server. </p>
 					<p> Project: Linux Server Configuration</p>
@@ -138,7 +145,7 @@
 			<div class="row">
 				<div class="col-md-12" >
 					<h4>System Version Control</h4>
-					<p> <a href = https://www.udacity.com/course/how-to-use-git-and-github--ud775>How to Use Git and GitHub</a> <i> 
+					<p> <a href = "https://www.udacity.com/course/how-to-use-git-and-github--ud775" onclick="trackOutboundLink('https://www.udacity.com/course/how-to-use-git-and-github--ud775'); return false;">How to Use Git and GitHub</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Udacity	</i> </p>
 					<p> The course will focus on Git, a specific version control system, and GitHub, a collaboration platform.   </p>
 				</div>
@@ -147,10 +154,10 @@
 			<div class="row">
 				<div class="col-md-12" >
 					<h4>Design</h4>
-					<p> <a href = https://www.coursera.org/course/design>Design: Creation of Artifacts in Society</a> <i> 
+					<p> <a href = "https://www.coursera.org/course/design" onclick="trackOutboundLink('https://www.coursera.org/course/design'); return false;">Design: Creation of Artifacts in Society</a> <i> 
 					&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;  Coursera	</i> </p>
 					<p> This graduate-level course emphasizes basic design process: define, explore, select, and refine. Lectures and design challenges test students' ability to apply course concepts to solve real problems.   </p>
-					<p>Project: <a href = http://www.tugaenko.ru>www.tugaenko.ru </a> </p>
+					<p>Project: <a href = "http://www.tugaenko.ru" onclick="trackOutboundLink('http://www.tugaenko.ru'); return false;">www.tugaenko.ru </a> </p>
 				</div>
 			</div>
 
